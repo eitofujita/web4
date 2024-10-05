@@ -1,0 +1,25 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+
+.logo {
+    font-weight: bold;
+}
+
+
+form .form-control {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .header, .nav, .main-content, .footer {
+        text-align: center;
+    }
+}
