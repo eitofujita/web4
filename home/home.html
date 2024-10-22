@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наши Услуги</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <header class="container-fluid bg-primary text-white text-center py-4">
+        <h1 class="site-title">Добро пожаловать на наш сайт</h1>
+        <nav class="my-3">
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a href="#home" class="nav-link text-white">Главная</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link text-white">Услуги</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link text-white">Контакты</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link text-white">О нас</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container my-5" id="home">
+        <div class="row">
+            <div class="col text-center">
+                <h2>Описание Услуг</h2>
+                <p>Мы предоставляем лучшие услуги, ориентируясь на удовлетворение потребностей наших клиентов.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container my-5" id="services">
+        <div class="row">
+            <div class="col text-center">
+                <h2>Наши Услуги</h2>
+                <p>Мы предлагаем разнообразные услуги. Пожалуйста, свяжитесь с нами для получения дополнительной информации.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container my-5" id="contact">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <h2 class="text-center">Контакты</h2>
+                <form class="needs-validation" novalidate>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Ваше имя:</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Введите ваше имя" required>
+                        <div class="invalid-feedback">Пожалуйста, введите ваше имя.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Ваш E-mail:</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Введите ваш E-mail" required>
+                        <div class="invalid-feedback">Пожалуйста, введите правильный E-mail.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Сообщение:</label>
+                        <textarea class="form-control" id="message" name="message" placeholder="Введите ваше сообщение" rows="5" required></textarea>
+                        <div class="invalid-feedback">Пожалуйста, введите ваше сообщение.</div>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Наши Услуги | Все права защищены</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        (function () {
+            'use strict'
+            var forms = document.querySelectorAll('.needs-validation')
+            Array.prototype.slice.call(forms).forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
+</body>
+</html>
